@@ -4,33 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Terminus home</title>
     
 </head>
     <style>
         body{
-            background-color: darkslategrey;
-            height: 1000px;
+            background-color: #2D2D2D;
+            height: fit-content;
+            box-sizing: content-box;
         }
+        h6{
+            height: fit-content;
+        }
+
+
+
+
+
         header{
-            background-color: rgb(46, 46, 46);
+            background-color: #D6D6D6;
             height: 150px;
             width: 100%;
         }
+
         nav{
-            background-color: rgb(0, 114, 114);
+            background-color: #D6D6D6;
             width: fit-content;
             height: fit-content;
             margin-left: 10%;
             margin-top: 5%;
         }
-        .index{
-            
-        }
+      
         
         ul{
             list-style-type: none; /*removes bullets*/
             float: left;
+            width: 150%;
         }
         
         li{
@@ -40,10 +50,9 @@
         }
 
         li a{
-            
             align-content: center;
             display: block; /*does whole width*/
-            color: white; /*colour of text*/
+            color: rgb(0, 0, 0); /*colour of text*/
             font-size: 20px; /*size*/
             text-align: center;
             text-decoration: none; /*removes underline*/
@@ -74,19 +83,20 @@
     }    
     .top2{
         
-        font-size: 20px;
+        font-size: 32px;
+        font-weight: 800;
         text-size-adjust: 20px;
         background-position: top;
         width: fit-content;
         height: fit-content;
-        color: rgb(46, 56, 56);
+        color: rgb(0, 0, 0);
         padding: 10px;
         float: top;
         align-self: center;
+        text-align: center;
+        margin-left: calc(device-width - width /2);
         
     }
-
-   
 
     .dev{
         /*background-color:rgb(0, 114, 114);*/
@@ -122,12 +132,123 @@
         padding: 10px;
         
     }
+
+   
     footer{
-        background-color: rgb(46, 46, 46);
+        background-color: #D6D6D6;
         width: 100%;  
-        height: 25%;
+        height: 5%;
+        /*position: relative;*/
         
             }
+
+    section{
+
+       
+        height: auto;
+        width: 100%;
+
+    }
+    
+    /* Styling the area of the slides */
+    .container_row{
+  display: grid;
+}
+
+.casualAd ,#slideshow{
+  grid-column: 1, 2;
+  grid-row: 1;
+}
+
+/*.layer1 span{
+  color: #fff;
+  background: #000cf6;
+}
+
+.layer2{
+  background: rgba(255, 0, 0, 0.4);
+}*/
+        .casualAd{
+        
+        width: 120px;
+        height: 600px;
+        float: right;
+        align-self: center;
+        /*position: absolute;*/
+        /*text-align: center;*/
+        background-color: aqua;
+        
+        } 
+
+    #slideshow{
+        
+        max-width: 1080px;
+        overflow: hidden;
+        height: 650px;
+        width: 1080px;
+        margin: 0 auto;
+        
+    }
+    /* Style each of the sides
+    with a fixed width and height */
+     
+    .slide{
+        float: right;
+        height: fit-content;
+        width: 1080px;
+    }
+     
+    /* Add animation to the slides */
+     
+    .slidewrapper{
+         
+        /* Calculate the total width on the
+      basis of number of slides */
+        width: calc(1080px * 3);
+         
+        /* Specify the animation with the
+      duration and speed */
+        animation: slide 10s ease infinite;
+        
+    }
+     
+    /* Set the background color
+    of each of the slides */
+     
+    .slide:nth-child(1) {
+        background-color: antiquewhite;
+        
+    }
+     
+    .slide:nth-child(2) {
+        background-color: aliceblue;
+        
+    }
+     
+    .slide:nth-child(3) {
+        background: red;
+    }
+     /*
+    .slide:nth-child(4) {
+        background: yellow;
+    } */
+    @keyframes slide {
+         
+         /* Calculate the margin-left for
+       each of the slides */
+         20% {
+             margin-left: 0px;
+         }
+         40% {
+             margin-left: calc(-1080px * 1);
+         } 
+         60% {
+             margin-left: calc(-1080px * 2);
+         }/*
+         80% {
+             margin-left: calc(-728px * 3);
+         } */
+     }
     </style>
     
 <body>
@@ -163,17 +284,45 @@
         </div>
     -->
     </header>
+<section>
+    <h6>
+<!--H = headding-->
     
+    <div class= "top2">welcome to the homepage</div>
     
-    <div class= "top2">
-        <H1>welcome to the homepage</H1> <!--H = headding-->
-    </div>
-    <h2>Home</h2> 
-        <div class="bottom_text"></div> 
+        <!--<div class="bottom_text"></div> -->
         
       
-    <div class="bottom_text"></div>
-
+    <!--<div class="bottom_text"></div>-->
+    <div class="container_row">
+    <div id="slideshow">
+        <div class="slidewrapper">
+                <div class="slide">
+                    <h1 class="1">
+                        <img src="terminus\game-over-screen.png" width="1080" height="auto">
+                    </h1>
+                </div>
+                <div class="slide">
+                    <h1 class="2">
+                        <img src="terminus\hud complete.png" width="1080" height="auto">
+                    </h1>
+                </div>
+                <div class="slide">
+                    <h1 class="3">
+                        <img src="terminus\level design final.png" width="1080" height="auto">
+                    </h1>
+                </div>
+        </div>
+   
+    </div>
+    
+        <div class="casualAd"> vvvvvvv</div>
+    </div>
+    <div class="container_row">
+        
+    </div>
+    </h6>
+</section>
     <footer>
 
         <div class="dev">
