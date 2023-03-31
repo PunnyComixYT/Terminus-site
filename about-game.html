@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About game</title>
 </head>
 <style>
         body{
-            background-color: darkslategrey;
+            background-color: #2D2D2D;
             height: fit-content;
         }
         header{
-            background-color: rgb(46, 46, 46);
+            background-color: #D9D9D9;
             height: 150px;
             width: 100%;
         }
         nav{
-            background-color: rgb(0, 114, 114);
+            background-color: #272020;
             width: 1000px;
             height: 100px;
             margin-left: 10%;
@@ -60,21 +60,166 @@
         text-align: center;
         font-size: 20px;
         text-size-adjust: 20px;
-        
+        text-decoration: underline;
+
         width: 100%;
         height: fit-content;
-        color: rgb(46, 56, 56);
+        color: #D9D9D9;
         padding: 10px;
         float: top;
         align-self: center;
         
     }
-    .casualAD{
+    .dev{
+        /*background-color:rgb(0, 114, 114);*/
+        font-size: 20px;
         
+        width: fit-content;
+        padding: 10px;
+        
+    }
+    .updates{
+        /*background-color: rgb(0, 114, 114);*/
+        font-size: 20px;
+        
+        width: fit-content;
+        padding: 10px;
+        
+    }
+
+    .about-game{
+        /*background-color: rgb(0, 114, 114);*/
+        font-size: 20px;
+        
+        width: fit-content;
+        padding: 10px;
+        
+    }
+
+    .contact-page{
+        /*background-color: rgb(0, 114, 114);*/
+        font-size: 20px;
+        
+        width: fit-content;
+        padding: 10px;
+        
+    }
+    .attempt{
+        width: fit-content;
+        height: fit-content;
+    }
+    .grid{
+        display: grid; grid-template-columns: auto auto; 
+    }
+    .headding{
+        border-radius: 25px;
+        text-align: center;
+        font-size: 32px;
+        background-color: #D9D9D9;
+        height: fit-content;
+        width: 1080px;
+        margin-left: 50px;
+        margin-top: 25px;
+
+    }
+    .subheadding{
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        text-align: center;
+        font-size: 18px;
+        background-color: #272020;
+        color: #D9D9D9;
+        height: 500px;
+    }
+    .casualAD{
+        border-radius: 15px;
         width: 160px;
         height: 600px;
-        background-color: aqua;
+        background-color: #272020;
+        margin: auto;
+        margin-left: 25px;
+        color: #D9D9D9;
         text-align: center;
+    }
+    #slideshow {
+        float: top;
+        max-width: 1080px;
+        overflow: hidden;
+        height: 650px;
+        width: 1080px;
+        margin: 0 auto;
+        margin-left: 50px;
+    }
+
+/* Style each of the sides
+
+    with a fixed width and height */
+
+    .slide {
+        float: right;
+        height: fit-content;
+        width: 1080px;
+    }
+
+/* Add animation to the slides */
+
+    .slidewrapper {
+ /* Calculate the total width on the
+      basis of number of slides */
+        width: calc(1080px * 4);
+/* Specify the animation with the
+      duration and speed */
+        animation: slide 15s ease infinite;
+    }
+
+/* Set the background color
+    of each of the slides */
+    .slide:nth-child(1) {
+        background-color: antiquewhite;
+    }
+
+    .slide:nth-child(2) {
+        background-color: aliceblue;
+    }
+    .slide:nth-child(3) {
+        background: red;
+    }
+
+    .slide:nth-child(4) {
+    background: yellow;
+    } 
+    @keyframes slide {
+/* Calculate the margin-left for
+
+       each of the slides */
+    20% {
+    margin-left: 0px;
+    }
+
+    40% {
+
+    margin-left: calc(-1080px * 1);
+
+    }
+
+    60% {
+
+    margin-left: calc(-1080px * 2);
+
+    }
+
+    80% {
+
+    margin-left: calc(-1080px * 3);
+
+    } 
+
+    }
+    footer{
+        background-color: #D9D9D9;
+        width: 100%;  
+        height: 25%;
+        border-radius: 25px;
     }
 </style>
 <body>
@@ -87,11 +232,12 @@
             
             <ul>
                 <li> <a href="index.html"><img src="terminus/Terminus animated logo.gif" width="75px" height="auto"></a></li>
-               
+            <li><a href="about-game.html">About game</a></li> 
+            <li><a href="updates.html">Updates</a></li>  
             <li><a href="developement.html"> Developement</a></li>
-            <li><a href="updates.html">updates</a></li>
-            <li><a href="about-game.html">about game</a></li>
-            <li><a href="contact-page.html">contact page</a></li>
+            
+            
+            <li><a href="contact-page.html">Contact page</a></li>
             </ul>
         </nav>
         
@@ -114,8 +260,44 @@
     <div class= "top2">
         <H1>About game</H1> <!--H = headding-->
     </div>
+<div class="attempt">
+    <div class="grid">
+        <div id="slideshow">
+            <div class="slidewrapper">
+                <div class="slide">
+                    <h1 class="1">
+                        <img src="terminus\Death splash screen.png" width="1080" height="auto">
+                    </h1>
+                </div>
+                <div class="slide">
+                    <h1 class="2">
+                    <img src="terminus\HUD design.png" width="1080" height="auto">
+                    </h1>
+                </div>
+                <div class="slide">
+                    <h1 class="3">
+                        <img src="terminus\level design.png" width="1080" height="auto"> 
+                    </h1>   
+                </div>
+                <div class="slide">
+                    <h1 class="4">
+                        <img src="terminus\menu design.png" width="1080" height="auto"> 
+                    </h1>   
+                </div>
+            </div>
+        </div>
+        
     
-    <div class="casualAD">AD</div>
+    
+        <div class="casualAD">AD</div>
+    </div>
+    <div class="headding"> the story
+        <div class="subheadding"> the year is 2180 machines have taken over <br> 
+        humanity is on it's last legs <br>
+        it's up to you to save them you are their only hope
+        </div>
+    </div>
+</div>
 </body>
 <footer>
 
