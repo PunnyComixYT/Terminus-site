@@ -102,30 +102,64 @@
         padding: 10px;
         
     }
-    .grid{
+    .sectionone{
         display: grid; grid-template-columns: auto auto; 
     }
     .casualAD{
-        
+        border-radius: 15px;
         width: 160px;
         height: 600px;
         background-color: #272020;
+        margin: auto;
+        margin-left: 25px;
         color: #D9D9D9;
         text-align: center;
     }
-    #slideshow {
-        border-radius: 15px;
+    .posts{
         float: top;
-        max-width: 1080px;
-        overflow: hidden;
-        height: 650px;
-        width: 1080px;
+        height: fit-content;
+        width: fit-content;
         margin: 0 auto;
-        margin: auto;
-        margin-left: 25px;
+        margin-left: 50px;
+    }
+    .one{
+        border-radius: 25px;
+        padding-top: 5px;
+        background-color: #272020;
+        width: 1100px;
+        height: fit-content;
+        padding-bottom: 5px;
+        margin-top: 5px;
+    }
+    .headding{
+        
+        margin-left: 5%;
+        border-radius: 25px;
+        font-size: 32px;
+        height: fit-content;
+        width: 90%;
+        background-color: #D9D9D9;
+        text-align: center;
+        text-decoration: underline;
+    }
+    .subheader{
+        font-size: 18px;
+        height: fit-content;
+        width: 1080px;
+        color: #D9D9D9;
+        margin-top: 5px;
+        text-align: center;
+    }
+    .image{
+        max-width: 1080px;
+        border-radius: 25px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        margin-left: 10px;
     }
 
     footer{
+        margin-top: 1%;
         background-color: #D9D9D9;
         width: 100%;  
         height: 25%;
@@ -142,12 +176,13 @@
             
             <ul>
                 <li> <a href="index.html"><img src="terminus/Terminus animated logo.gif" width="75px" height="auto"></a></li>
-            <li><a href="about-game.html">About game</a></li>
-            <li><a href="updates.html">Updates</a></li>   
+            <li><a href="about-game.html">About game</a></li> 
+            <li><a href="updates.html">Updates</a></li> 
+            <li><a href="contact-page.html">Contact us</a></li> 
             <li><a href="developement.html"> Developement</a></li>
             
             
-            <li><a href="contact-page.html">Contact page</a></li>
+            
             </ul>
         </nav>
     
@@ -169,8 +204,36 @@
     <div class= "top2">
         <H1>Updates</H1> <!--H = headding-->
     </div>
-    
+<div class="sectionone">
+    <div class="posts">
+        <div class="one">
+            <div class="headding">the start of the game</div>
+            <div class="subheader">this game that I have started includes<br>
+                guns, robots, npc's, fighting, a cool map(that i would prefer to have proceedual generate but can't), and lots more.<br>
+                It is still a work in progress but I am getting there.<br>
+                So join me on this adventure and here we go.
+            </div>
+            <div class="image">
+                <img src="terminus\Death splash screen.png" width="1080" height="auto">
+            </div>
+        </div>
+        <div class="one">
+            <div class="headding">The current state of the game</div>
+            <div class="subheader">This game  is currently at an unpresentable stage<br>
+                over the course of creating the game there has been several glitches such as:<br>
+                code that I followed on a tutorial not working properly.<br>
+                having to completely restart because somehow the engine would crash when attempting to test the game.<br>
+                Because of this the game is no where near finished and I am going to continue making it at home during the holidays.<br>
+                Wish me luck.
+            </div>
+            <div class="image">
+                
+            </div>
+        </div>
+    </div>
     <div class="casualAD">AD</div>
+
+</div>    
 </body>
 <footer>
 
@@ -184,7 +247,7 @@
         <a href="about-game.html" target=_self>about game</a>
     </div>
     <div class="contact-page">
-        <a href="contact-page.html" target=_self>contact page</a>
+        <a href="contact-page.html" target=_self>contact us</a>
     </div>
 </footer>
 </html>
