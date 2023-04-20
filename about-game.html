@@ -4,9 +4,344 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About game</title>
 </head>
-<body>
+<style>
+    body{
+    background-color: #2D2D2D;
+    height: fit-content;
+    box-sizing: content-box;
+}
+h6{
+    height: fit-content;
+}
+
+
+
+
+
+header{
+    background-color: #D6D6D6;
+    height: 150px;
+    width: 100%;
+}
+
+nav{
+    background-color: #D6D6D6;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+
+ul{
+    list-style-type: none; /*removes bullets*/
+    float: left;
+    width: 150%;
+}
+
+li{
+    float: left; /*puts links next to eachover*/
+    margin-left: 5%;
     
+}
+
+li a{
+    align-content: center;
+    display: block; /*does whole width*/
+    color: rgb(0, 0, 0); /*colour of text*/
+    font-size: 20px; /*size*/
+    text-align: center;
+    text-decoration: none; /*removes underline*/
+    padding-top: 5px;
+    padding-left: 5px;
+}
+li a:hover{
+    float: left;
+    color: lightblue;
+    
+    background-color: rgb(8, 8, 7);
+}
+.dev{
+        /*background-color:rgb(0, 114, 114);*/
+        font-size: 20px;
+        
+        width: fit-content;
+        padding: 10px;
+        
+    }
+    .updates{
+        /*background-color: rgb(0, 114, 114);*/
+        font-size: 20px;
+        
+        width: fit-content;
+        padding: 10px;
+        
+    }
+
+    .about-game{
+        /*background-color: rgb(0, 114, 114);*/
+        font-size: 20px;
+        
+        width: fit-content;
+        padding: 10px;
+        
+    }
+
+    .contact-page{
+        /*background-color: rgb(0, 114, 114);*/
+        font-size: 20px;
+        
+        width: fit-content;
+        padding: 10px;
+        
+    }
+    .top2{
+        
+        font-size: 64px;
+        font-weight: 800;
+        text-size-adjust: 20px;
+        background-position: top;
+        width: fit-content;
+        height: fit-content;
+        color: #D6D6D6;
+        text-decoration: underline;
+        padding: 10px;
+        float: top;
+        align-self: center;
+        text-align: center;
+        margin: auto;
+        
+    }
+   
+    footer{
+        background-color: #D6D6D6;
+        width: 100%;  
+        height: 5%;
+        /*position: relative;*/
+        
+            }
+            section{
+
+       
+height: auto;
+width: 100%;
+
+}
+
+
+/* Styling the area of the slides */
+.container_row{
+display: grid;
+}
+
+.casualAd, #slideshow{
+grid-column: 1, 2;
+grid-row: 1;
+}
+
+h5{
+    height: fit-content;
+    width: 1080px;
+    background-color: #D6D6D6;
+    margin-left: 500px;
+}
+
+.subhead{
+    font-size: 28px;
+    text-align: center;
+    text-decoration: underline;
+}
+.message{
+    font-size: 16px;
+    text-align: center;
+}
+
+/*.layer1 span{
+color: #fff;
+background: #000cf6;
+}
+
+.layer2{
+background: rgba(255, 0, 0, 0.4);
+}*/
+
+
+.casualAd{
+
+/*width: 120px;
+height: 600px;*/
+width: 120px; 
+height: 20px;
+float: right;
+align-self: center;
+/*position: absolute;*/
+/*text-align: center;*/
+background-color: rgb(1, 102, 102);
+text-align: center;
+max-width: 120px;
+max-height: 600px;
+padding-top: 290px;
+padding-bottom: 290px;
+} 
+
+#slideshow{
+
+max-width: 1080px;
+overflow: hidden;
+height: 650px;
+width: 1080px;
+margin: 0 auto;
+
+}
+/* Style each of the sides
+with a fixed width and height */
+
+.slide{
+float: right;
+height: fit-content;
+width: 1080px;
+}
+
+/* Add animation to the slides */
+
+.slidewrapper{
+ 
+/* Calculate the total width on the
+basis of number of slides */
+width: calc(1080px * 3);
+ 
+/* Specify the animation with the
+duration and speed */
+animation: slide 10s ease infinite;
+
+}
+
+/* Set the background color
+of each of the slides */
+
+.slide:nth-child(1) {
+background-color: antiquewhite;
+
+}
+
+.slide:nth-child(2) {
+background-color: aliceblue;
+
+}
+
+.slide:nth-child(3) {
+background: red;
+}
+/*
+.slide:nth-child(4) {
+background: yellow;
+} */
+@keyframes slide {
+ 
+ /* Calculate the margin-left for
+each of the slides */
+ 20% {
+     margin-left: 0px;
+ }
+ 40% {
+     margin-left: calc(-1080px * 1);
+ } 
+ 60% {
+     margin-left: calc(-1080px * 2);
+ }/*
+ 80% {
+     margin-left: calc(-728px * 3);
+ } */
+}
+</style>
+<body>
+    <header>
+        <nav>
+            
+                
+        <!--<a href="index.html"><img src="terminus/Terminus animated logo.gif" alt="link to homepage" width="75px" height="auto" itemprop="index.html"></a>-->
+        
+        
+            <ul>
+                <li> <a href="index.html"><img src="terminus/Terminus animated logo.gif" width="75px" height="auto"></a></li>
+           
+            <li><a href="developement.html"> Developement</a></li>
+            <li><a href="updates.html">updates</a></li>
+            <li><a href="about-game.html">about game</a></li>
+            <li><a href="contact-page.html">contact page</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h6>
+    <!--H = headding-->
+        
+        <div class= "top2">About game</div>
+        
+            <!--<div class="bottom_text"></div> -->
+            
+          
+        <!--<div class="bottom_text"></div>-->
+        <div class="container_row">
+        <div id="slideshow">
+            <div class="slidewrapper">
+                    <div class="slide">
+                        <h1 class="1">
+                            <img src="terminus\game-over-screen.png" width="1080" height="auto">
+                        </h1>
+                    </div>
+                    <div class="slide">
+                        <h1 class="2">
+                            <img src="terminus\hud complete.png" width="1080" height="auto">
+                        </h1>
+                    </div>
+                    <div class="slide">
+                        <h1 class="3">
+                            <img src="terminus\level design final.png" width="1080" height="auto">
+                        </h1>
+                    </div>
+            </div>
+            
+    
+            
+        </div>
+        
+            <div class="casualAd"> vvvvvvv</div>
+                <!--var boxsize = function(dataType){
+                    return '<div class="size of box" id="this"><i class="total size"></i> </div>
+                    <div class="mergetotal"><i class="fas check-mergetotal"></i></div>
+                    <input type="text" class="contact" style="margin-right: 60px;" maxlength="120" name="my-string" data-name="attempt" placeholder="${dataType}">
+                }; 
+            -->
+            
+        </div>
+        <div class="container_row">
+            
+        </div>
+        </h6>
+    </section>
+    <section>
+        <h5>
+            <div class="subhead">The story</div>
+            <div class="message">the year is 2180 humanity is on it's last legs robots have taken over. <br> there is one person left capeable of stopping them </div>
+        </h5>
+    </section>
+    <footer>
+
+        <div class="dev">
+            <a href="developement.html" target="_self"> Developement</a>
+        </div>
+        <div class="updates">
+            <a href="updates.html" target=_self>updates</a>
+        </div>
+        <div class="about-game">
+            <a href="about-game.html" target=_self>about game</a>
+        </div>
+        <div class="contact-page">
+            <a href="contact-page.html" target=_self>contact page</a>
+        </div>
+    </footer>
 </body>
 </html>
