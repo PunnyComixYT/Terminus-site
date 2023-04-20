@@ -7,63 +7,67 @@
     <title>Contact us</title>
 </head>
 <style>
-    body{
-    background-color: #2D2D2D;
-    height: fit-content;
-    box-sizing: content-box;
-}
-h6{
-    height: fit-content;
-}
+            body{
+            background-color: #2D2D2D;
+            height: fit-content;
+        }
+        header{
+            background-color: #D9D9D9;
+            height: 150px;
+            width: 100%;
+        }
+        nav{
+            background-color: #272020;
+            width: 1000px;
+            height: 100px;
+            margin-left: 10%;
+            margin-top: 5%;
+        }
 
+        
+        ul{
+            list-style-type: none; /*removes bullets*/
+            float: left;
+            width: 100%;
+        }
+        
+        li{
+            float: left; /*puts links next to eachover*/
+            margin-left: 5%;
+            
+        }
 
-
-
-
-header{
-    background-color: #D6D6D6;
-    height: 150px;
-    width: 100%;
-}
-
-nav{
-    background-color: #D6D6D6;
-    width: fit-content;
-    height: fit-content;
-    margin-left: 10%;
-    margin-top: 5%;
-}
-
-
-ul{
-    list-style-type: none; /*removes bullets*/
-    float: left;
-    width: 150%;
-}
-
-li{
-    float: left; /*puts links next to eachover*/
-    margin-left: 5%;
-    
-}
-
-li a{
-    align-content: center;
-    display: block; /*does whole width*/
-    color: rgb(0, 0, 0); /*colour of text*/
-    font-size: 20px; /*size*/
-    text-align: center;
-    text-decoration: none; /*removes underline*/
-    padding-top: 5px;
-    padding-left: 5px;
-}
-li a:hover{
-    float: left;
-    color: lightblue;
-    
-    background-color: rgb(8, 8, 7);
-}
-.dev{
+        li a{
+            
+            align-content: center;
+            display: block; /*does whole width*/
+            color: white; /*colour of text*/
+            font-size: 20px; /*size*/
+            text-align: center;
+            text-decoration: none; /*removes underline*/
+            padding-top: 5px;
+            padding-left: 5px;
+        }
+        li a:hover{
+            float: left;
+            color: lightblue;
+            
+            background-color: rgb(8, 8, 7);
+        }
+    .top2{
+        text-align: center;
+        font-size: 20px;
+        text-size-adjust: 20px;
+        text-decoration: underline;
+        width: 100%;
+        height: fit-content;
+        color: #D9D9D9;
+        padding: 10px;
+        float: top;
+        align-self: center;
+        
+    }
+    .dev{
         /*background-color:rgb(0, 114, 114);*/
         font-size: 20px;
         
@@ -97,38 +101,94 @@ li a:hover{
         padding: 10px;
         
     }
-
-   
-    footer{
-        background-color: #D6D6D6;
-        width: 100%;  
-        height: 5%;
-        /*position: relative;*/
+    .sectionone{
+        display: grid; grid-template-columns: auto auto; 
+    }
+    .casualAD{
+        border-radius: 15px;
+        width: 160px;
+        height: 600px;
+        background-color: #272020;
+        color: #D9D9D9;
+        text-align: center;
+        margin: auto;
+        margin-left: 25px;
+    }
+    .contacts{
+        float: top;
+        height: fit-content;
+        width: fit-content;
+        margin: 0 auto;
+        margin-left: 50px;
+    }
+    .one{
+        border-radius: 25px;
+        padding-top: 5px;
+        background-color: #272020;
+        width: 1100px;
+        height: fit-content;
+        padding-bottom: 5px;
+        margin-top: 5px;
+    }
+    .headding{
         
-            }
+        margin-left: 5%;
+        border-radius: 25px;
+        font-size: 32px;
+        height: fit-content;
+        width: 90%;
+        background-color: #D9D9D9;
+        text-align: center;
+        text-decoration: underline;
+    }
+    .subheader{
+        font-size: 18px;
+        height: fit-content;
+        width: 1080px;
+        color: #D9D9D9;
+        margin-top: 5px;
+        text-align: center;
+    }
+    .contact{
+        font-size: 18px;
+        height: fit-content;
+        width: 1080px;
+        color: #D9D9D9;
+        margin-top: 5px;
+        text-align: center;
+    }
+    footer{
+        
+        margin-top: 1%;
+        background-color: #D9D9D9;
+        width: 100%;  
+        height: 25%;
+        border-radius: 25px;
+    }
 </style>
 <body>
     <header>
         <nav>
             
                 
-        <!--<a href="index.html"><img src="terminus/Terminus animated logo.gif" alt="link to homepage" width="75px" height="auto" itemprop="index.html"></a>-->
-        
-        
+            <!--<a href="index.html"><img src="terminus/Terminus animated logo.gif" alt="link to homepage" width="75px" height="auto" itemprop="index.html"></a>-->
+            
+            
             <ul>
                 <li> <a href="index.html"><img src="terminus/Terminus animated logo.gif" width="75px" height="auto"></a></li>
-           
+            <li><a href="about-game.html">About game</a></li> 
+            <li><a href="updates.html">Updates</a></li> 
+            <li><a href="contact-page.html">Contact us</a></li> 
             <li><a href="developement.html"> Developement</a></li>
-            <li><a href="updates.html">updates</a></li>
-            <li><a href="about-game.html">about game</a></li>
-            <li><a href="contact-page.html">contact page</a></li>
+            
+            
+            
             </ul>
         </nav>
-    </header>
-    <footer>
-
+    
+        <!--<div class="top">home page</div>
         <div class="dev">
-            <a href="developement.html" target="_self"> Developement</a>
+            <a href="developemnt.html" target="_self"> Developement</a>
         </div>
         <div class="updates">
             <a href="updates.html" target=_self>updates</a>
@@ -139,6 +199,47 @@ li a:hover{
         <div class="contact-page">
             <a href="contact-page.html" target=_self>contact page</a>
         </div>
-    </footer>
+    -->
+    </header>
+    <div class= "top2">
+        <H1>Contact us</H1> <!--H = headding-->
+    </div>
+<div class="sectionone">
+    <div class="contacts">
+        <div class="one">
+            <div class="headding">contact US</div>
+            <div class="subheader"> here ar our contacts:
+                <div class="contact"> Email: <br>
+                    terminusapocolypsegame@gmail.com
+                </div>
+                <div class="contact"> Twitter:
+
+                </div>
+                <div class="contact"> Facebook:
+
+                </div>
+                <div class="contact"> Youtube:
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="casualAD">AD</div>
+</div>
 </body>
+<footer>
+
+    <div class="dev">
+        <a href="developement.html" target="_self"> Developement</a>
+    </div>
+    <div class="updates">
+        <a href="updates.html" target=_self>updates</a>
+    </div>
+    <div class="about-game">
+        <a href="about-game.html" target=_self>about game</a>
+    </div>
+    <div class="contact-page">
+        <a href="contact-page.html" target=_self>contact us</a>
+    </div>
+</footer>
 </html>

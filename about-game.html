@@ -7,63 +7,70 @@
     <title>About game</title>
 </head>
 <style>
-    body{
-    background-color: #2D2D2D;
-    height: fit-content;
-    box-sizing: content-box;
-}
-h6{
-    height: fit-content;
-}
+        body{
+            background-color: #2D2D2D;
+            height: fit-content;
+        }
+        header{
+            background-color: #D9D9D9;
+            height: 150px;
+            width: 100%;
+        }
+        nav{
+            background-color: #272020;
+            width: 1000px;
+            height: 100px;
+            margin-left: 10%;
+            margin-top: 5%;
+        }
+
+        
+        ul{
+            list-style-type: none; /*removes bullets*/
+            float: left;
+            width: 100%;
+        }
+        
+        li{
+            float: left; /*puts links next to eachover*/
+            margin-left: 5%;
+            
+        }
+
+        li a{
+            
+            align-content: center;
+            display: block; /*does whole width*/
+            color: white; /*colour of text*/
+            font-size: 20px; /*size*/
+            text-align: center;
+            text-decoration: none; /*removes underline*/
+            padding-top: 5px;
+            padding-left: 5px;
+        }
+        li a:hover{
+            float: left;
+            color: lightblue;
+            
+            background-color: rgb(8, 8, 7);
+        }
 
 
+.top2{
+        text-align: center;
+        font-size: 20px;
+        text-size-adjust: 20px;
+        text-decoration: underline;
 
-
-
-header{
-    background-color: #D6D6D6;
-    height: 150px;
-    width: 100%;
-}
-
-nav{
-    background-color: #D6D6D6;
-    width: fit-content;
-    height: fit-content;
-    margin-left: 10%;
-    margin-top: 5%;
-}
-
-
-ul{
-    list-style-type: none; /*removes bullets*/
-    float: left;
-    width: 150%;
-}
-
-li{
-    float: left; /*puts links next to eachover*/
-    margin-left: 5%;
-    
-}
-
-li a{
-    align-content: center;
-    display: block; /*does whole width*/
-    color: rgb(0, 0, 0); /*colour of text*/
-    font-size: 20px; /*size*/
-    text-align: center;
-    text-decoration: none; /*removes underline*/
-    padding-top: 5px;
-    padding-left: 5px;
-}
-li a:hover{
-    float: left;
-    color: lightblue;
-    
-    background-color: rgb(8, 8, 7);
-}
-.dev{
+        width: 100%;
+        height: fit-content;
+        color: #D9D9D9;
+        padding: 10px;
+        float: top;
+        align-self: center;
+        
+    }
+    .dev{
         /*background-color:rgb(0, 114, 114);*/
         font-size: 20px;
         
@@ -97,241 +104,150 @@ li a:hover{
         padding: 10px;
         
     }
-    .top2{
-        
-        font-size: 64px;
-        font-weight: 800;
-        text-size-adjust: 20px;
-        background-position: top;
+    .attempt{
         width: fit-content;
         height: fit-content;
-        color: #D6D6D6;
-        text-decoration: underline;
-        padding: 10px;
-        float: top;
-        align-self: center;
-        text-align: center;
-        margin: auto;
-        
     }
-   
-    footer{
-        background-color: #D6D6D6;
-        width: 100%;  
-        height: 5%;
-        /*position: relative;*/
-        
-            }
-            section{
+    .grid{
+        display: grid; grid-template-columns: auto auto; 
+    }
+    .headding{
+        border-radius: 25px;
+        text-align: center;
+        font-size: 32px;
+        background-color: #D9D9D9;
+        height: fit-content;
+        width: 1080px;
+        margin-left: 50px;
+        margin-top: 25px;
 
-       
-height: auto;
-width: 100%;
+    }
+    .subheadding{
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        text-align: center;
+        font-size: 18px;
+        background-color: #272020;
+        color: #D9D9D9;
+        height: 500px;
+    }
+    .casualAD{
+        border-radius: 15px;
+        width: 160px;
+        height: 600px;
+        background-color: #272020;
+        margin: auto;
+        margin-left: 25px;
+        color: #D9D9D9;
+        text-align: center;
+    }
+    #slideshow {
+        border-radius: 15px;
+        float: top;
+        max-width: 1080px;
+        overflow: hidden;
+        height: 650px;
+        width: 1080px;
+        margin: 0 auto;
+        margin-left: 50px;
+    }
 
-}
-
-
-/* Styling the area of the slides */
-.container_row{
-display: grid;
-}
-
-.casualAd, #slideshow{
-grid-column: 1, 2;
-grid-row: 1;
-}
-
-h5{
-    height: fit-content;
-    width: 1080px;
-    background-color: #D6D6D6;
-    margin-left: 500px;
-}
-
-.subhead{
-    font-size: 28px;
-    text-align: center;
-    text-decoration: underline;
-}
-.message{
-    font-size: 16px;
-    text-align: center;
-}
-
-/*.layer1 span{
-color: #fff;
-background: #000cf6;
-}
-
-.layer2{
-background: rgba(255, 0, 0, 0.4);
-}*/
-
-
-.casualAd{
-
-/*width: 120px;
-height: 600px;*/
-width: 120px; 
-height: 20px;
-float: right;
-align-self: center;
-/*position: absolute;*/
-/*text-align: center;*/
-background-color: rgb(1, 102, 102);
-text-align: center;
-max-width: 120px;
-max-height: 600px;
-padding-top: 290px;
-padding-bottom: 290px;
-} 
-
-#slideshow{
-
-max-width: 1080px;
-overflow: hidden;
-height: 650px;
-width: 1080px;
-margin: 0 auto;
-
-}
 /* Style each of the sides
-with a fixed width and height */
 
-.slide{
-float: right;
-height: fit-content;
-width: 1080px;
-}
+    with a fixed width and height */
+
+    .slide {
+        float: right;
+        height: fit-content;
+        width: 1080px;
+    }
 
 /* Add animation to the slides */
 
-.slidewrapper{
- 
-/* Calculate the total width on the
-basis of number of slides */
-width: calc(1080px * 3);
- 
+    .slidewrapper {
+ /* Calculate the total width on the
+      basis of number of slides */
+        width: calc(1080px * 4);
 /* Specify the animation with the
-duration and speed */
-animation: slide 10s ease infinite;
-
-}
+      duration and speed */
+        animation: slide 15s ease infinite;
+    }
 
 /* Set the background color
-of each of the slides */
+    of each of the slides */
+    .slide:nth-child(1) {
+        background-color: antiquewhite;
+    }
 
-.slide:nth-child(1) {
-background-color: antiquewhite;
+    .slide:nth-child(2) {
+        background-color: aliceblue;
+    }
+    .slide:nth-child(3) {
+        background: red;
+    }
 
-}
+    .slide:nth-child(4) {
+    background: yellow;
+    } 
+    @keyframes slide {
+/* Calculate the margin-left for
 
-.slide:nth-child(2) {
-background-color: aliceblue;
+       each of the slides */
+    20% {
+    margin-left: 0px;
+    }
 
-}
+    40% {
 
-.slide:nth-child(3) {
-background: red;
-}
-/*
-.slide:nth-child(4) {
-background: yellow;
-} */
-@keyframes slide {
- 
- /* Calculate the margin-left for
-each of the slides */
- 20% {
-     margin-left: 0px;
- }
- 40% {
-     margin-left: calc(-1080px * 1);
- } 
- 60% {
-     margin-left: calc(-1080px * 2);
- }/*
- 80% {
-     margin-left: calc(-728px * 3);
- } */
-}
+    margin-left: calc(-1080px * 1);
+
+    }
+
+    60% {
+
+    margin-left: calc(-1080px * 2);
+
+    }
+
+    80% {
+
+    margin-left: calc(-1080px * 3);
+
+    } 
+
+    }
+    footer{
+        margin-top: 1%;
+        background-color: #D9D9D9;
+        width: 100%;  
+        height: 25%;
+        border-radius: 25px;
+    }
 </style>
 <body>
     <header>
         <nav>
             
                 
-        <!--<a href="index.html"><img src="terminus/Terminus animated logo.gif" alt="link to homepage" width="75px" height="auto" itemprop="index.html"></a>-->
-        
-        
+            <!--<a href="index.html"><img src="terminus/Terminus animated logo.gif" alt="link to homepage" width="75px" height="auto" itemprop="index.html"></a>-->
+            
+            
             <ul>
                 <li> <a href="index.html"><img src="terminus/Terminus animated logo.gif" width="75px" height="auto"></a></li>
-           
+            <li><a href="about-game.html">About game</a></li> 
+            <li><a href="updates.html">Updates</a></li> 
+            <li><a href="contact-page.html">Contact us</a></li> 
             <li><a href="developement.html"> Developement</a></li>
-            <li><a href="updates.html">updates</a></li>
-            <li><a href="about-game.html">about game</a></li>
-            <li><a href="contact-page.html">contact page</a></li>
+            
+            
+            
             </ul>
         </nav>
-    </header>
-    <section>
-        <h6>
-    <!--H = headding-->
         
-        <div class= "top2">About game</div>
-        
-            <!--<div class="bottom_text"></div> -->
-            
-          
-        <!--<div class="bottom_text"></div>-->
-        <div class="container_row">
-        <div id="slideshow">
-            <div class="slidewrapper">
-                    <div class="slide">
-                        <h1 class="1">
-                            <img src="terminus\game-over-screen.png" width="1080" height="auto">
-                        </h1>
-                    </div>
-                    <div class="slide">
-                        <h1 class="2">
-                            <img src="terminus\hud complete.png" width="1080" height="auto">
-                        </h1>
-                    </div>
-                    <div class="slide">
-                        <h1 class="3">
-                            <img src="terminus\level design final.png" width="1080" height="auto">
-                        </h1>
-                    </div>
-            </div>
-            
     
-            
-        </div>
-        
-            <div class="casualAd"> vvvvvvv</div>
-                <!--var boxsize = function(dataType){
-                    return '<div class="size of box" id="this"><i class="total size"></i> </div>
-                    <div class="mergetotal"><i class="fas check-mergetotal"></i></div>
-                    <input type="text" class="contact" style="margin-right: 60px;" maxlength="120" name="my-string" data-name="attempt" placeholder="${dataType}">
-                }; 
-            -->
-            
-        </div>
-        <div class="container_row">
-            
-        </div>
-        </h6>
-    </section>
-    <section>
-        <h5>
-            <div class="subhead">The story</div>
-            <div class="message">the year is 2180 humanity is on it's last legs robots have taken over. <br> there is one person left capeable of stopping them </div>
-        </h5>
-    </section>
-    <footer>
-
+        <!--<div class="top">home page</div>
         <div class="dev">
-            <a href="developement.html" target="_self"> Developement</a>
+            <a href="developemnt.html" target="_self"> Developement</a>
         </div>
         <div class="updates">
             <a href="updates.html" target=_self>updates</a>
@@ -342,6 +258,68 @@ each of the slides */
         <div class="contact-page">
             <a href="contact-page.html" target=_self>contact page</a>
         </div>
-    </footer>
+    -->
+    </header>
+    <div class= "top2">
+        <H1>About game</H1> <!--H = headding-->
+    </div>
+<div class="attempt">
+    <div class="grid">
+        <div id="slideshow">
+            <div class="slidewrapper">
+                <div class="slide">
+                    <h1 class="1">
+                        <img src="terminus\Death splash screen.png" width="1080" height="auto">
+                    </h1>
+                </div>
+                <div class="slide">
+                    <h1 class="2">
+                    <img src="terminus\HUD design.png" width="1080" height="auto">
+                    </h1>
+                </div>
+                <div class="slide">
+                    <h1 class="3">
+                        <img src="terminus\level design.png" width="1080" height="auto"> 
+                    </h1>   
+                </div>
+                <div class="slide">
+                    <h1 class="4">
+                        <img src="terminus\menu design.png" width="1080" height="auto"> 
+                    </h1>   
+                </div>
+            </div>
+        </div>
+        
+    
+    
+        <div class="casualAD">AD</div>
+    </div>
+    <div class="headding"> the story
+        <div class="subheadding"> I don't have much time to tell you they will be here at any moment <br>
+            the year is 2180 machines have taken over. <br>
+            the world?<br>
+            the awnser is simple it is in ruins <br>
+        humanity is on it's last legs <br>
+        it's up to you to save them you are their only hope <br>
+        it's most important that you... <br>
+        I have to go. they are coming.
+        </div>
+    </div>
+</div>
 </body>
+<footer>
+
+    <div class="dev">
+        <a href="developement.html" target="_self"> Developement</a>
+    </div>
+    <div class="updates">
+        <a href="updates.html" target=_self>updates</a>
+    </div>
+    <div class="about-game">
+        <a href="about-game.html" target=_self>about game</a>
+    </div>
+    <div class="contact-page">
+        <a href="contact-page.html" target=_self>contact us</a>
+    </div>
+</footer>
 </html>
